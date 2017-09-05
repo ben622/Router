@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+ext {
+    bintrayName = 'proxy-annotation'
+    artifact = bintrayName
+    libraryName = 'proxy annotation'
+    libraryDescription = 'The Proxy Annotations'
+    libraryVersion = PROXY_ANNOTATIONS
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

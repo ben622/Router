@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+
+ext {
+    bintrayName = 'proxy-compiler'
+    artifact = bintrayName
+    libraryName = 'proxy compiler'
+    libraryDescription = 'The Proxy Compiler'
+    libraryVersion = PROXY_COMPILER_VERSION
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    /*auto-service库，可以自动生成META-INF/services/javax.annotation.processing.Processor文件*/
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    /*javapoet 自动生成java文件*/
+    compile 'com.squareup:javapoet:1.7.0'
+    /*依赖注解*/
+    compile project(':proxy-annotations')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context="com.ben.router.MainActivity">
+    <Button
+        android:onClick="init"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="跳转之前必须先初始化"/>
+    <Button
+        android:onClick="usingClassNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="通过Class跳转"/>
+    <Button
+        android:onClick="usingAliasNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="通过指定Alias跳转"/>
+    <Button
+        android:onClick="usingUriNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="通过Uri跳转"/>
+    <Button
+        android:onClick="usingAliasNavigationWithParams"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="携带参数跳转"/>
+
+</LinearLayout>

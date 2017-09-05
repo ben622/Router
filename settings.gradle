@@ -1,0 +1,1 @@
+include ':app', ':proxy-annotations', ':proxy-api', ':proxy-compiler'
