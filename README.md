@@ -1,4 +1,4 @@
-# Router Android中实现页面跳转
+# Router Android中实现页面跳转以及参数自动注入功能
 
 #### 一、功能介绍
 1. **支持Class跳转**
